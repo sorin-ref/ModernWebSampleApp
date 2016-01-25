@@ -1,0 +1,13 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">New department</div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input id="nameInput" name="Name" type="text" ng-model="department.Name" placeholder="Name" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="saveDepartment()">Save</button>
+            <a href="#/departments" class="btn">Cancel</a>
+        </form>
+    </div>
+</div>

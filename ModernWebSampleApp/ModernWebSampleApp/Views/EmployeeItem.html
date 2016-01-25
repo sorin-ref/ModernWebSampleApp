@@ -1,0 +1,30 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">{{ employee.FullName }}</div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label for="firstNameInput">First name</label>
+                <input id="firstNameInput" name="FirstName" type="text" ng-model="employee.FirstName" placeholder="First name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="lastNameInput">Last name</label>
+                <input id="lastNameInput" name="LastName" type="text" ng-model="employee.LastName" placeholder="Last name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="dayOfBirthInput">Day of birth</label>
+                <input id="dayOfBirthInput" name="DayOfBirth" type="text" ng-model="employee.DayOfBirth" placeholder="YYYY-MM-DD" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="emailAddressInput">E-mail address</label>
+                <input id="emailAddressInput" name="EmailAddress" type="text" ng-model="employee.EmailAddress" placeholder="E-mail address" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="departmentInput">Department</label>
+                <select id="departmentInput" name="DepartmentId" ng-model="employee.DepartmentId" ng-options="department.Id as department.Name for department in departments" class="form-control"></select>
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="saveEmployee()">Save</button>
+            <button class="btn" ng-click="deleteEmployee()">Delete</button>
+            <a href="#/employees" class="btn">Cancel</a>
+        </form>
+    </div>
+</div>

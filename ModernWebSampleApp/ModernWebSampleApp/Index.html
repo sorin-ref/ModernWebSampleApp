@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html ng-app="OrganizationApp">
+<head>
+    <title>Organization Sample App</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="Content/bootstrap.css"/>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/DepartmentControllers.js"></script>
+    <script src="Scripts/EmployeeControllers.js"></script>
+    <script src="Scripts/App.js"></script>
+</head>
+<body class="container">
+    <header>
+        <h1>Organization Sample App</h1>
+        <nav ng-include="'Views/Menu.html'"></nav>
+    </header>
+    <div ng-view></div>
+</body>
+</html>

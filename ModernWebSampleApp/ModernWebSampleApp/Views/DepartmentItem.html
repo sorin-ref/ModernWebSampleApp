@@ -1,0 +1,35 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">{{ department.Name }} department</div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input id="nameInput" name="Name" type="text" ng-model="department.Name" placeholder="Name" class="form-control" />
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">List of employees working on {{ department.Name }} department</div>
+                <div class="panel-body">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Full name</th>
+                                <th>Day of birth</th>
+                                <th>E-mail address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="employee in departmentEmployees">
+                                <td>{{ employee.FullName }}</td>
+                                <td>{{ employee.DayOfBirth | date:'longDate' }}</td>
+                                <td>{{ employee.EmailAddress }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="saveDepartment()">Save</button>
+            <button class="btn" ng-click="deleteDepartment()">Delete</button>
+            <a href="#/departments" class="btn">Cancel</a>
+        </form>
+    </div>
+</div>

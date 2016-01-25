@@ -1,0 +1,24 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">List of employees</div>
+    <div class="panel-body">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Full name</th>
+                    <th>Day of birth</th>
+                    <th>E-mail address</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees">
+                    <td><a ng-href="#/employees/{{ employee.Id }}">{{ employee.FullName }}</a></td>
+                    <td>{{ employee.DayOfBirth | date:'longDate' }}</td>
+                    <td>{{ employee.EmailAddress }}</td>
+                    <td>{{ employee.DepartmentName }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#/employees/new">Add new</a>
+    </div>
+</div>
