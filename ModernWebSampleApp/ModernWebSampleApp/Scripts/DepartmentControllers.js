@@ -40,3 +40,4 @@ module.controller('DepartmentItemController', function ($scope, $http, $routePar
         }
     };
 });
+//# sourceMappingURL=DepartmentControllers.js.map

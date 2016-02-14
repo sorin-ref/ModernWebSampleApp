@@ -34,3 +34,4 @@ module.controller('NavigationController', function ($scope, $location) {
         return $location.path().indexOf(path) == 0;
     };
 });
+//# sourceMappingURL=App.js.map
