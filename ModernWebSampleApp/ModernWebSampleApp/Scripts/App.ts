@@ -35,9 +35,3 @@ module.controller('NavigationController', function ($scope, $location) {
         return $location.path().indexOf(path) == 0;
     };
 });
-module.controller('EmployeeListController', function ($scope, $http) {
-    $http.get('api/Employees')
-        .then((response) => {
-            $scope.employees = response.data;
-        });
-});
