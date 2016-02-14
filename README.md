@@ -9,3 +9,5 @@ The application code leverages a complete series of modern technologies:
     - ngRoute for client side URL routing and displaying views accordingly;
     - $http to read and update data through the WebAPI host;
  - Bootstrap to style the user interface at minimal level.
+
+![Architecture](https://raw.githubusercontent.com/SDolha/ModernWebSampleApp/master/Architecture.png)
